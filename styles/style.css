@@ -1,0 +1,168 @@
+body{
+    background-color: rgb(189, 189, 189);
+}
+.start-game{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: grey;
+    margin: 20px 50px;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 5px 1px 10px 10px rgb(62, 53, 53);
+}
+
+.player1, .player2{
+
+    
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(107, 70, 70);
+    margin: 20px 50px;
+    border-radius: 20px;
+    color:rgb(221, 221, 221);
+    font-size: 54px;
+}
+
+.players{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.start-btn{
+    width: 50%;
+    border: 2px solid black;
+    align-self: center;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: rgb(63, 61, 61);
+    color: rgb(221, 221, 221);
+    font-size: 24px;
+    
+}
+
+.board{
+    width: 400px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* width: 75%; */
+    /* width: auto; */
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+    border: 2px solid black;
+    grid-gap:10px;
+    padding: 20px 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    min-width: 0;
+}
+
+.board > div{
+    padding: 20px 10px;
+    /* margin-left: 8px; */
+    height: 100px;
+    width: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    box-shadow: 2px 5px 20px 4px rgb(43, 42, 42);
+    /* border-bottom: 1px solid black; */
+    /* border-right: 1px solid black; */
+    /* border-left: 1px solid black;
+    border-top: 1px solid black; */
+
+
+    
+}
+
+.game-area{
+    height: 100vh;
+    width: auto;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.player-ann{
+    align-self: center;
+
+    background-color: rgb(221, 221, 221);
+    font-size: 24px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    
+}
+
+.winner-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    font-size: 32px;
+    font-weight: 800;
+    background-color: rgb(126, 84, 84);
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px 20px rgb(59, 51, 51);
+    margin-top: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: whitesmoke;
+
+}
+
+.new-game{
+   
+    padding: 10px 20px;
+    font-size: 32px;
+    border-radius: 5px;
+    background-color: rgb(183, 0, 0);
+    color: whitesmoke;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px 10px rgb(59, 51, 51);
+
+}
+
+.new-game:hover{
+   
+    background-color: rgba(28, 218, 3, 0.756);
+    color: whitesmoke;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px 10px rgb(59, 51, 51);
+
+}
+
+.reset-div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reset-btn{
+    width: 40%;
+    border: 2px solid black;
+    align-self: center;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: rgb(63, 61, 61);
+    color: rgb(221, 221, 221);
+    font-size: 24px;
+
+}
